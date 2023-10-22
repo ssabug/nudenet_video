@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nudenet_video README</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__left">
+    <div class="stackedit__toc">
+      
+<ul>
+<li><a href="#nudenet_video.py">Nudenet_video.py</a>
+<ul>
+<li><a href="#description">Description</a></li>
+<li><a href="#features-history-and-bugs">Features, history and bugs</a></li>
+<li><a href="#requirements">Requirements</a></li>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#how-to-use">How to use</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+  </div>
+  <div class="stackedit__right">
+    <div class="stackedit__html">
+      <h1 id="nudenet_video.py">Nudenet_video.py</h1>
+<h2 id="description">Description</h2>
+<p>This python script uses the <a href="https://github.com/notAI-tech/NudeNet">NudeNet API</a> to detect nudity &amp; blur it in video files.</p>
+<p><strong>NOTE</strong> : The Nudenet algorithm is far from perfect, there will be false positives &amp; negatives, <strong>always verify your files</strong> or use the <strong>semi automatic</strong> method for 100% accuracy.</p>
+<p><strong>NOTE</strong> There are some gifs tutorials in the <strong>tutorials</strong> subfolder, but some may be not up to date, the README file always contains the reference instructions.</p>
+<p><strong>IMPORTANT</strong> for now nothing is optimized, keep in mind the durations of :</p>
+<ul>
+<li>video analysis : around 1 minute for 5 minutes of 720p 30fps video (180 mn video =&gt; 27 mn analysis)</li>
+<li>video file rendering : will depend of your machine capabilities too and takes time as well</li>
+</ul>
+<h2 id="features-history-and-bugs">Features, history and bugs</h2>
+<p>see <img src="HISTORY&amp;DEBUG.md" alt="HISTORY&amp;DEBUG"> file for more details.</p>
+<h2 id="requirements">Requirements</h2>
+<ul>
+<li>python ( prefer installation via microsoft store or download <a href="https://www.python.org/downloads/">here</a> )</li>
+<li>pip (should be asked to be installed during windows python setup)</li>
+<li>ffmpeg ( download [here] (<a href="https://ffmpeg.org/download.html">https://ffmpeg.org/download.html</a>) )</li>
+<li>python libs ( will be automatically installed ) : nudenet, opencv-python, datetime</li>
+</ul>
+<h2 id="installation">Installation</h2>
+<ol>
+<li>Download the zip / git clone the repo.</li>
+<li>Extract it.</li>
+<li>Install python (if not already present) . On Windows, use the <strong>Microsoft Store</strong> and search for <strong>python</strong> . Choose the latest version (3.11 is alright) . If the setup ask you wether to install <strong>pip</strong> , accept.</li>
+<li>Run a terminal into the extracted directory, to do so:
+<ul>
+<li>in Windows start menu, search for app <strong>powershell</strong> (you can also use older <strong>command prompt</strong>).</li>
+<li>Run it.</li>
+<li>To reach the folder in the terminal type : <code>cd "path_to_nudenet_folder"</code><br>
+<strong>path_to_nudenet_folder</strong> being where nudenet files were extracted.</li>
+<li>Example : if its in <strong>C:\Users\fijishenisdrip\Downloads\Nude_filter</strong>, type:<br>
+<code>cd "C:\Users\fijishenisdrip\Downloads\Nude_filter\"</code></li>
+<li>validate with <strong>Return</strong> key.</li>
+<li>If you’re using Windows 11, you can ignore the previous steps and do it from a file broswer by right clicking into the folder and choosing <strong>Run in terminal</strong>.</li>
+</ul>
+</li>
+<li>In the terminal type and validate with <strong>Return</strong> key :<br>
+<code>pip install -r requirements.txt</code><br>
+It will install all python librairies required by the script. It may take a little time.</li>
+<li><strong>(Windows only)</strong> Download ffmpeg binaries from <a href="https://ffmpeg.org/download.html">https://ffmpeg.org/download.html</a> . If ffmpeg is already installed on the system, go to next step.</li>
+<li><strong>(Windows only)</strong> In the downloaded ffmpeg files, find <strong>ffmpeg.exe</strong>.</li>
+<li><strong>(Windows only)</strong> copy this file in the nudenet extracted directory.</li>
+</ol>
+<p>Im assuming that if you use Linux, you’ll know how to use command line and install python/ffmpeg properly.</p>
+<h2 id="how-to-use">How to use</h2>
+<h3 id="full-automatic-mode">Full automatic mode:</h3>
+<ol>
+<li>Create a empty folder ( example : <strong>C:\CensoredVideos</strong> ).</li>
+<li>Put all video files you want to analyze &amp; render innit.</li>
+<li>Run a terminal into the nudenet script directory ( refer to <strong>Installation</strong> step 4 if you don’t know how to do it ).</li>
+<li>Type in the terminal:<br>
+<code>python nudenet_video.py "path"</code><br>
+<strong>path</strong> being the full path to the created folder with videos , ending with / on Linux/Mac or \ on Windows, example :<br>
+<code>python nudenet_video.py "C:\CensoredVideos\"</code></li>
+<li>The script will analyze &amp; render a censored video file for each video present in the directory. Details of each operation will be written on the terminal screen.</li>
+<li>Wait ! Analysis and rendering takes time. It depends of your computer specs.</li>
+<li>The output videos will be in the same folder as original files, with <strong>censored_</strong> at the beginning of the filename.</li>
+</ol>
+<h3 id="semi-automatic-mode">Semi automatic mode:</h3>
+<ol>
+<li>In the nudenet script directory, do a copy of the file <strong>manual_search.txt</strong> in the <strong>timecode_files</strong> subfolder.</li>
+<li>Rename the file if you want, like <strong>censor_list_01.txt</strong>.</li>
+<li>Open it with a text editor, it should contain blocks of this format:<br>
+<code>file=/home/pwner/Videos/a convertir/092105.mp4;</code><br>
+<code>['00:00:01', '00:00:10', {'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.28773850202560425, 'box': [702, 348, 169, 131]}]</code><br>
+<code>['00:00:15', '00:00:20', {'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.28749483823776245, 'box': [513, 419, 273, 125]}]</code></li>
+<li>The first part is the complete path to one video to blur. If the video file is <strong>C:\Videos\humancentipede.mkv</strong>, line would be :<br>
+<code>file=C:\Videos\humancentipede.mkv;</code></li>
+<li>For the second part, each line contains timecodes to blur, for instance if you want to blur from <strong>00:01:01</strong> to <strong>00:01:30</strong>, the line would be:<br>
+<code>['00:01:01', '00:01:30', {'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.28773850202560425, 'box': [702, 348, 169, 131]}]</code><br>
+( the part after the second comma is not taken into account, so leave it as is ).</li>
+<li>Add as much lines as blurred sections you need.</li>
+<li>You can add as much videos as you want in the file, just add, for each video, the two sections as defined in steps 4 to 6.</li>
+<li>Save the file.</li>
+<li>Type, in a terminal from the nudenet directory ( refer to <strong>Installation</strong> step 4 if you don’t know how to do it ).<br>
+<code>python nudenet_video.py "full_path_to_your_file"</code><br>
+<strong>full_path_to_your_file</strong> being the path to the created text file, example :<br>
+<code>python nudenet_video.py "C:\Users\fijishenisdrip\Downloads\Nude_filter\timecode_files\censor_list_01.txt"</code></li>
+<li>The script will  render a censored video file for each video present in the text file. Details of each operation will be written on the terminal screen.</li>
+<li>Wait ! Rendering takes time. It depends of your computer specs.</li>
+<li>The output videos will be in the same folder as original files, with <strong>censored_</strong> at the beginning of the filename.</li>
+</ol>
+
+    </div>
+  </div>
+</body>
+
+</html>

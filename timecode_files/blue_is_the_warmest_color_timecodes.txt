@@ -1,0 +1,7 @@
+file=C:\Users\pr0pri0\Downloads\Blue.is.the.Warmest.Color.2013.720p.BluRay.x264-Pahe.in.mkv;
+['00:22:02', '00:22:52', {'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.3720461130142212, 'box': [636, 309, 273, 92]}]
+['01:14:53', '01:21:33', {'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.3720461130142212, 'box': [636, 309, 273, 92]}]
+['01:30:31', '01:31:55', {'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.3720461130142212, 'box': [636, 309, 273, 92]}]
+['01:38:28', '01:38:40', {'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.3720461130142212, 'box': [636, 309, 273, 92]}]
+['01:40:41', '01:41:15', {'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.3720461130142212, 'box': [636, 309, 273, 92]}]
+['02:47:58', '02:48:08', {'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.3720461130142212, 'box': [636, 309, 273, 92]}]
