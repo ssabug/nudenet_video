@@ -1,10 +1,8 @@
-
-
 # Nudenet_video.py
 
 
 ## Description
-This python script uses the [NudeNet API](https://github.com/notAI-tech/NudeNet) to detect nudity & blur it in video files.
+This python script uses the [NudeNet API](https://github.com/notAI-tech/NudeNet) to detect nudity & [FFMPEG](https://ffmpeg.org/) to render blurred video files.
 
 **NOTE** : The Nudenet algorithm is far from perfect, there will be false positives & negatives, **always verify your files** or use the **semi automatic** method for 100% accuracy.
 

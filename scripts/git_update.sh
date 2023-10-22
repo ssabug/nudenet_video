@@ -11,12 +11,12 @@ then
     echo "/////// MOVING TO PROJECT DIR ${BASE_DIR}"
     cd "${BASE_DIR}"
 
-    echo "/////// INIT PROJECT DIR ${BASE_DIR}"
-    git init
-    echo "/////// LINK TO REMOTE REPO"
-    git remote add "${GIT_NAME}" "${GIT_URL}"
-    echo "/////// PUSH TO MASTER BRANCH"
-    git push --set-upstream "${GIT_NAME}" master
+    #echo "/////// INIT PROJECT DIR ${BASE_DIR}"
+    #git init
+    #echo "/////// LINK TO REMOTE REPO"
+    #git remote add "${GIT_NAME}" "${GIT_URL}"
+    #echo "/////// PUSH TO MASTER BRANCH"
+    #git push --set-upstream "${GIT_NAME}" master
 
     echo "/////// ADDING ALL FILES"
     git add --all
