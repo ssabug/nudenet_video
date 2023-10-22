@@ -22,6 +22,9 @@ see ![HISTORY&DEBUG](HISTORY&DEBUG.md) file for more details.
  - python libs ( will be automatically installed ) : nudenet, opencv-python, datetime
 
 ## Installation
+<details>
+  <summary> Instructions </summary>
+
 1. Download the zip / git clone the repo.
 2. Extract it if necessary.
 3. Install python (if not already present) . On Windows, use the **Microsoft Store** and search for **python** . Choose the latest version (3.11 is alright) . If the setup ask you wether to install **pip** , accept.
@@ -49,7 +52,9 @@ see ![HISTORY&DEBUG](HISTORY&DEBUG.md) file for more details.
 8. **(Windows only)** copy this file in the nudenet extracted directory.
 
 Im assuming that if you use Linux, you'll know how to use command line and install python/ffmpeg properly.
- 
+
+ </details>
+
 ## How to use
 ### Full automatic mode:
 <details>
