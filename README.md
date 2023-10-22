@@ -52,6 +52,9 @@ Im assuming that if you use Linux, you'll know how to use command line and insta
  
 ## How to use
 ### Full automatic mode:
+<details>
+  <summary> Instructions </summary>
+
 1. Create a empty folder ( example : **C:\CensoredVideos** ).
 2. Put all video files you want to analyze & render innit.
 3. Run a terminal into the nudenet script directory ( refer to **Installation** step 4 if you don't know how to do it ).
@@ -67,7 +70,11 @@ Im assuming that if you use Linux, you'll know how to use command line and insta
 6. Wait ! Analysis and rendering takes time. It depends of your computer specs.
 7. The output videos will be in the same folder as original files, with **censored_** at the beginning of the filename. 
 
+</details>
 ### Semi automatic mode:
+<details>
+  <summary> Instructions </summary>
+
 1. In the nudenet script directory, do a copy of the file **manual_search.txt** in the **timecode_files** subfolder. 
 2. Rename the file if you want, like **censor_list_01.txt**.
 3. Open it with a text editor, it should contain blocks of this format:
@@ -110,3 +117,4 @@ Im assuming that if you use Linux, you'll know how to use command line and insta
 11. Wait ! Rendering takes time. It depends of your computer specs.
 12. The output videos will be in the same folder as original files, with **censored_** at the beginning of the filename. 
 
+</details>
