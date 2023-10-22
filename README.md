@@ -28,7 +28,8 @@ see ![HISTORY&DEBUG](HISTORY&DEBUG.md) file for more details.
 4. Run a terminal into the extracted directory, to do so:
    - in Windows start menu, search for app **powershell** (you can also use older **command prompt**).
    - Run it.
-   - To reach the folder in the terminal type : `cd "path_to_nudenet_folder" `
+   - To reach the folder in the terminal type :
+    `cd "path_to_nudenet_folder" `
 **path_to_nudenet_folder** being where nudenet files were extracted.
    - Example : if its in **C:\Users\fijishenisdrip\Downloads\Nude_filter**, type:
 ` cd "C:\Users\fijishenisdrip\Downloads\Nude_filter\" `
