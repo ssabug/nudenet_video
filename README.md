@@ -59,9 +59,9 @@ Im assuming that if you use Linux, you'll know how to use command line and insta
 
    `python nudenet_video.py "path"`
 
-  **path** being the full path to the created folder with videos , ending with / on Linux/Mac or \ on Windows, example :  
+   **path** being the full path to the created folder with videos , ending with / on Linux/Mac or \ on Windows, example :  
 
-  `python nudenet_video.py "C:\CensoredVideos\" `
+   `python nudenet_video.py "C:\CensoredVideos\" `
 
 5. The script will analyze & render a censored video file for each video present in the directory. Details of each operation will be written on the terminal screen.
 6. Wait ! Analysis and rendering takes time. It depends of your computer specs.
