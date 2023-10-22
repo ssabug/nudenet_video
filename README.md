@@ -32,9 +32,7 @@ see ![HISTORY&DEBUG](HISTORY&DEBUG.md) file for more details.
 
     `cd "path_to_nudenet_folder" `
 
-**path_to_nudenet_folder** being where nudenet files were extracted.
-
-Example : if its in **C:\Users\fijishenisdrip\Downloads\Nude_filter**, type:
+**path_to_nudenet_folder** being where nudenet files were extracted. Example : if its in **C:\Users\fijishenisdrip\Downloads\Nude_filter**, type:
 
 ` cd "C:\Users\fijishenisdrip\Downloads\Nude_filter\" `
 
