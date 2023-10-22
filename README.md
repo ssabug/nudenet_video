@@ -30,19 +30,19 @@ see ![HISTORY&DEBUG](HISTORY&DEBUG.md) file for more details.
    2. Run it.
    3. To reach the folder in the terminal type :
 
-    `cd "path_to_nudenet_folder" `
+       `cd "path_to_nudenet_folder" `
 
-   **path_to_nudenet_folder** being where nudenet files were extracted. Example : if its in **C:\Users\fijishenisdrip\Downloads\Nude_filter**, type:
+      **path_to_nudenet_folder** being where nudenet files were extracted. Example : if its in **C:\Users\fijishenisdrip\Downloads\Nude_filter**, type:
 
-   ` cd "C:\Users\fijishenisdrip\Downloads\Nude_filter\" `
+      ` cd "C:\Users\fijishenisdrip\Downloads\Nude_filter\" `
 
    4. validate with **Return** key.
    5. If you're using Windows 11, you can ignore the previous steps and do it from a file broswer by right clicking into the folder and choosing **Run in terminal**.
 5. In the terminal type and validate with **Return** key :
 
- `pip install -r requirements.txt`
+   `pip install -r requirements.txt`
 
-  It will install all python librairies required by the script. It may take a little time.
+   It will install all python librairies required by the script. It may take a little time.
 
 6. **(Windows only)** Download ffmpeg binaries from https://ffmpeg.org/download.html . If ffmpeg is already installed on the system, go to next step.
 7. **(Windows only)** In the downloaded ffmpeg files, find **ffmpeg.exe**.
@@ -57,7 +57,7 @@ Im assuming that if you use Linux, you'll know how to use command line and insta
 3. Run a terminal into the nudenet script directory ( refer to **Installation** step 4 if you don't know how to do it ).
 4. Type in the terminal: 
 
-`python nudenet_video.py "path"`
+   `python nudenet_video.py "path"`
 
   **path** being the full path to the created folder with videos , ending with / on Linux/Mac or \ on Windows, example :  
 
@@ -72,11 +72,11 @@ Im assuming that if you use Linux, you'll know how to use command line and insta
 2. Rename the file if you want, like **censor_list_01.txt**.
 3. Open it with a text editor, it should contain blocks of this format:
 
-`file=/home/pwner/Videos/a convertir/092105.mp4;`
+   `file=/home/pwner/Videos/a convertir/092105.mp4;`
 
-`['00:00:01', '00:00:10', {'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.28773850202560425, 'box': [702, 348, 169, 131]}]`
+   `['00:00:01', '00:00:10', {'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.28773850202560425, 'box': [702, 348, 169, 131]}]`
 
-`['00:00:15', '00:00:20', {'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.28749483823776245, 'box': [513, 419, 273, 125]}]`
+   `['00:00:15', '00:00:20', {'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.28749483823776245, 'box': [513, 419, 273, 125]}]`
 
 4. The first part is the complete path to one video to blur. 
 
@@ -86,7 +86,7 @@ Im assuming that if you use Linux, you'll know how to use command line and insta
 
 5. For the second part, each line contains timecodes to blur.
 
-For instance if you want to blur from **00:01:01** to **00:01:30**, the line would be:
+   For instance if you want to blur from **00:01:01** to **00:01:30**, the line would be:
 
    `['00:01:01', '00:01:30', {'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.28773850202560425, 'box': [702, 348, 169, 131]}]`
 
