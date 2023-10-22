@@ -71,6 +71,7 @@ Im assuming that if you use Linux, you'll know how to use command line and insta
 7. The output videos will be in the same folder as original files, with **censored_** at the beginning of the filename. 
 
 </details>
+
 ### Semi automatic mode:
 <details>
   <summary> Instructions </summary>
