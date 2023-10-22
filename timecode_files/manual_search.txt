@@ -1,7 +1,7 @@
-file=/home/pwner/Videos/a convertir/092105.mp4;
+file=/home/ouser/Videos/a convertir/092105.mp4;
 ['00:00:01', '00:00:10', {'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.28773850202560425, 'box': [702, 348, 169, 131]}]
 ['00:00:15', '00:00:20', {'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.28749483823776245, 'box': [513, 419, 273, 125]}]
-file=/home/pwner/Videos/a convertir/0970571.mp4;
+file=/home/ouser/Videos/a convertir/0970571.mp4;
 ['00:00:00', '00:00:05', {'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.28773850202560425, 'box': [702, 348, 169, 131]}]
 ['00:00:10', '00:00:15', {'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.28749483823776245, 'box': [513, 419, 273, 125]}]
 ['00:00:20', '00:00:25', {'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.3565114140510559, 'box': [651, 344, 204, 198]}]
