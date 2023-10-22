@@ -29,12 +29,12 @@ see ![HISTORY&DEBUG](HISTORY&DEBUG.md) file for more details.
    1. in Windows start menu, search for app **powershell** (you can also use older **command prompt**).
    2. Run it.
    3. To reach the folder in the terminal type :
-
+   
     `cd "path_to_nudenet_folder" `
 
-**path_to_nudenet_folder** being where nudenet files were extracted. Example : if its in **C:\Users\fijishenisdrip\Downloads\Nude_filter**, type:
+   **path_to_nudenet_folder** being where nudenet files were extracted. Example : if its in **C:\Users\fijishenisdrip\Downloads\Nude_filter**, type:
 
-` cd "C:\Users\fijishenisdrip\Downloads\Nude_filter\" `
+   ` cd "C:\Users\fijishenisdrip\Downloads\Nude_filter\" `
 
    4. validate with **Return** key.
    5. If you're using Windows 11, you can ignore the previous steps and do it from a file broswer by right clicking into the folder and choosing **Run in terminal**.
