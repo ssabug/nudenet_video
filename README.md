@@ -29,7 +29,7 @@ see ![HISTORY&DEBUG](HISTORY&DEBUG.md) file for more details.
    1. in Windows start menu, search for app **powershell** (you can also use older **command prompt**).
    2. Run it.
    3. To reach the folder in the terminal type :
-   
+
     `cd "path_to_nudenet_folder" `
 
    **path_to_nudenet_folder** being where nudenet files were extracted. Example : if its in **C:\Users\fijishenisdrip\Downloads\Nude_filter**, type:
@@ -77,32 +77,36 @@ Im assuming that if you use Linux, you'll know how to use command line and insta
 `['00:00:01', '00:00:10', {'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.28773850202560425, 'box': [702, 348, 169, 131]}]`
 
 `['00:00:15', '00:00:20', {'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.28749483823776245, 'box': [513, 419, 273, 125]}]`
+
 4. The first part is the complete path to one video to blur. 
 
-If the video file is **C:\Videos\humancentipede.mkv**, line would be :
+   If the video file is **C:\Videos\humancentipede.mkv**, line would be :
 
-`file=C:\Videos\humancentipede.mkv;`
+   `file=C:\Videos\humancentipede.mkv;`
+
 5. For the second part, each line contains timecodes to blur.
 
 For instance if you want to blur from **00:01:01** to **00:01:30**, the line would be:
 
- `['00:01:01', '00:01:30', {'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.28773850202560425, 'box': [702, 348, 169, 131]}]`
+   `['00:01:01', '00:01:30', {'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.28773850202560425, 'box': [702, 348, 169, 131]}]`
 
-  ( the part after the second comma is not taken into account, so leave it as is ).
+   ( the part after the second comma is not taken into account, so leave it as is ).
+
 6. Add as much lines as blurred sections you need.
 7. You can add as much videos as you want in the file, just add, for each video, the two sections as defined in steps 4 to 6.
 8. Save the file.
 9. Type, in a terminal from the nudenet directory ( refer to **Installation** step 4 if you don't know how to do it ).
 
-`python nudenet_video.py "full_path_to_your_file"`
+   `python nudenet_video.py "full_path_to_your_file"`
 
-**full_path_to_your_file** being the path to the created text file, example :
+   **full_path_to_your_file** being the path to the created text file, example :
 
-`python nudenet_video.py "C:\Users\fijishenisdrip\Downloads\Nude_filter\timecode_files\censor_list_01.txt"`
+   `python nudenet_video.py "C:\Users\fijishenisdrip\Downloads\Nude_filter\timecode_files\censor_list_01.txt"`
 
 10. The script will  render a censored video file for each video present in the text file. 
 
-Details of each operation will be written on the terminal screen.
+   Details of each operation will be written on the terminal screen.
+
 11. Wait ! Rendering takes time. It depends of your computer specs.
 12. The output videos will be in the same folder as original files, with **censored_** at the beginning of the filename. 
 
