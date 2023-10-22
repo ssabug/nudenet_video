@@ -26,9 +26,9 @@ see ![HISTORY&DEBUG](HISTORY&DEBUG.md) file for more details.
 2. Extract it if necessary.
 3. Install python (if not already present) . On Windows, use the **Microsoft Store** and search for **python** . Choose the latest version (3.11 is alright) . If the setup ask you wether to install **pip** , accept.
 4. Run a terminal into the extracted directory, to do so:
-   - in Windows start menu, search for app **powershell** (you can also use older **command prompt**).
-   - Run it.
-   - To reach the folder in the terminal type :
+   1. in Windows start menu, search for app **powershell** (you can also use older **command prompt**).
+   2. Run it.
+   3. To reach the folder in the terminal type :
 
     `cd "path_to_nudenet_folder" `
 
@@ -38,8 +38,8 @@ Example : if its in **C:\Users\fijishenisdrip\Downloads\Nude_filter**, type:
 
 ` cd "C:\Users\fijishenisdrip\Downloads\Nude_filter\" `
 
-   - validate with **Return** key.
-   - If you're using Windows 11, you can ignore the previous steps and do it from a file broswer by right clicking into the folder and choosing **Run in terminal**.
+   4. validate with **Return** key.
+   5. If you're using Windows 11, you can ignore the previous steps and do it from a file broswer by right clicking into the folder and choosing **Run in terminal**.
 5. In the terminal type and validate with **Return** key :
 
  `pip install -r requirements.txt`
