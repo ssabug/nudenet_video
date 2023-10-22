@@ -23,7 +23,7 @@ see ![HISTORY&DEBUG](HISTORY&DEBUG.md) file for more details.
 
 ## Installation
 1. Download the zip / git clone the repo.
-2. Extract it.
+2. Extract it if necessary.
 3. Install python (if not already present) . On Windows, use the **Microsoft Store** and search for **python** . Choose the latest version (3.11 is alright) . If the setup ask you wether to install **pip** , accept.
 4. Run a terminal into the extracted directory, to do so:
    - in Windows start menu, search for app **powershell** (you can also use older **command prompt**).
